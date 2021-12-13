@@ -33,3 +33,5 @@ To run this program:
 Where:
 - `<inputfile>`: A file containing 32-bit unsigned integers.
 - `<outputfile>`: A file created by the program that sort the input in ascending order (small to large). Contains Binary (non-ASCII/UTF8) data.
+
+Note: you can use the 4_gb_file_maker included to generate an file for the input of this program
