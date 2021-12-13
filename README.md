@@ -14,7 +14,7 @@ This assumes you have a native C compiler installed, such as `gcc`.
 
 Clone the repository.
 
-`git clone https://github.com/bohnerjosh/bvSort/`
+```git clone https://github.com/bohnerjosh/bvSort/```
 
 # Compiling & Running
 
