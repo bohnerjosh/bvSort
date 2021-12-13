@@ -23,7 +23,7 @@ This example uses `gcc` for the compiler
 To compile this program:
 
 ```
-gcc bvSort.c -lpthread
+gcc bvSort.c -lpthread -o bvSort
 ```
 
 To run this program:
