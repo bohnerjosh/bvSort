@@ -25,22 +25,27 @@ struct preSort {
                    // so we can set the correct pointers
 } typedef preSort;
 
+// nodes hold data and are stored in the min heap
 struct node {
-    unsigned int num;
-    short ID;
+    unsigned int num; // holds the unsigned int from the array
+    short ID; // ID representing the temp file the num came from
 } typedef Node;
 
+// slice holds partially sorted data from temp file, and has a few
+// flags
 struct Slice {
-    unsigned int arr[SLICE_SIZE_STRUCT];
-    short ID;
-    int size;
-    int index;
-    short done;
-    short readCount;
+    unsigned int arr[SLICE_SIZE_STRUCT]; // array to hold data
+    short ID; // ID representing the temp file the num came from
+    int size; // real size of array (indexable)
+    int index; // index for the array that points to the next
+                    // int to grab
+    short done; // flag to signify whether we are done reading from the 
+                // file
+    short readCount; // number of times we have read from the file
 } typedef slice;
 
 struct sliceHolder {
-    slice* data[64];
+    slice* data[64]; // array holding pointers to slices
 
 } typedef sliceholder;
 

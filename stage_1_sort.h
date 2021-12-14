@@ -29,19 +29,7 @@ void swap(unsigned int *a, unsigned int *b) {
 }
 
 int partition_t(unsigned int *arr, int low, int high, short type) {
-    /*
-    unsigned int* tmp = arr[high];
-    int size = tmp-arr;
-    short snum1 = size/5;
-    short snum2 = size/2; 
-    unsigned int num1 = arr[low];
-    unsigned int num2 = arr[size/2]; 
-    unsigned int num3 = arr[high];
-    unsigned short r1 = num1 - median;
-    unsigned short r2 = num2 - median;
-    unsigned short r3 = num3 - median;
-    if (r1 < r2 && r1 < r3) 
-*/
+
     // assign pivot to last element and move it
     unsigned int pivot = arr[high];
     unsigned int t = 0;
@@ -78,20 +66,6 @@ int partition_t(unsigned int *arr, int low, int high, short type) {
 }
 
 int partition(unsigned int *arr, int low, int high) {
-    // pick a pivot
-    /*
-    unsigned int* tmp = arr[high];
-    int size = tmp-arr;
-    short snum1 = size/5;
-    short snum2 = size/2; 
-    unsigned int num1 = arr[low];
-    unsigned int num2 = arr[size/2]; 
-    unsigned int num3 = arr[high];
-    unsigned short r1 = num1 - median;
-    unsigned short r2 = num2 - median;
-    unsigned short r3 = num3 - median;
-    if (r1 < r2 && r1 < r3) 
-*/
     
     // assign pivot to last element and move it
     unsigned int pivot = arr[high];
