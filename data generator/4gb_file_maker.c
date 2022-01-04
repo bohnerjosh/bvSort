@@ -14,7 +14,7 @@ int buf[ARRSIZE];
 
 int main() {
 
-  int fd = open("rand.data", O_WRONLY | O_CREAT, S_IRWU);
+  int fd = open("rand.data", O_WRONLY | O_CREAT, S_IRWXU);
 
   printf("fd=%d\n", fd);
   printf("errno: %s\n", strerror(errno));
